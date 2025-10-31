@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth"> <!-- Added scroll-smooth for nice jumping -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,6 +32,44 @@
             margin-bottom: 0.5em;
             word-break: break-word; /* Break long URLs */
         }
+        /* Make the links in the references match the teal accent color */
+        .prose .references a {
+            color: #0d9488; /* teal-600 */
+        }
+        .prose .references a:hover {
+            color: #0f766e; /* teal-700 */
+        }
+
+        /* Styles for the Table of Contents */
+        .toc {
+            background-color: #f8fafc; /* bg-gray-50 */
+            border: 1px solid #e5e7eb; /* border-gray-200 */
+            border-radius: 0.5rem; /* rounded-lg */
+            padding: 1.5rem; /* p-6 */
+            margin-bottom: 2.5rem; /* mb-10 */
+        }
+        .toc h3 {
+            margin-top: 0;
+            margin-bottom: 1rem;
+            font-size: 1.25rem; /* text-xl */
+            font-weight: 600;
+            color: #111827; /* text-gray-900 */
+        }
+        .toc ol {
+            list-style: decimal;
+            margin-left: 1.5rem;
+        }
+        .toc li {
+            margin-bottom: 0.5rem;
+        }
+        .toc a {
+            color: #0d9488; /* text-teal-600 */
+            text-decoration: none;
+        }
+        .toc a:hover {
+            color: #0f766e; /* text-teal-700 */
+            text-decoration: underline;
+        }
 
     </style>
 </head>
@@ -58,16 +96,33 @@
             <h1 class="text-4xl font-bold text-gray-900 mb-3">The Resilient Swinger: A Psychological Framework for Navigating the Emotional Landscape of Consensual Non-Monogamy</h1>
             <p class="text-gray-500 text-sm mb-6">By Steve Syms on October 31, 2025</p>
             
+            <!-- START: Table of Contents -->
+            <div class="toc">
+                <h3>Table of Contents</h3>
+                <ol>
+                    <li><a href="#intro">Introduction - Defining the Terrain</a></li>
+                    <li><a href="#psychology">The Psychology of Resilience: Beyond "Bouncing Back"</a></li>
+                    <li><a href="#primer">Understanding "The Lifestyle": A Primer on Swinging Culture and Practice</a></li>
+                    <li><a href="#stressors">The Crucible of Emotion: Unique Stressors in the Swinging Lifestyle</a></li>
+                    <li><a href="#architecture">The Architecture of Resilience: Core Psychological Tools</a></li>
+                    <li><a href="#strategies">Practical Strategies for Building and Maintaining Emotional Resilience</a></li>
+                    <li><a href="#ecosystem">The Ecosystem of Support: Leveraging Community and Professional Resources</a></li>
+                    <li><a href="#conclusion">Conclusion - Integrating Resilience into the Lifestyle</a></li>
+                    <li><a href="#references">References</a></li>
+                </ol>
+            </div>
+            <!-- END: Table of Contents -->
+
             <!-- 
                 Added 'prose-lg' for larger text and 'prose-teal' for accent colors.
                 Added 'max-w-none' to ensure it fills the container.
             -->
             <div class="prose prose-lg prose-teal max-w-none">
                 
-                <h2>Introduction - Defining the Terrain</h2>
+                <h2 id="intro">Introduction - Defining the Terrain</h2>
                 <p>This report provides a comprehensive psychological analysis of emotional resilience within the context of the swinging community, also known as "the lifestyle." It examines the unique emotional stressors inherent to this form of consensual non-monogamy (CNM) and outlines the core psychological tools, practical strategies, and support systems that enable participants to navigate these challenges successfully. By integrating psychological theory with lived experience and expert guidance, this analysis constructs a framework for understanding and cultivating the resilience necessary for a sustainable and emotionally fulfilling journey in the swinging lifestyle.</p>
                 
-                <h2>The Psychology of Resilience: Beyond "Bouncing Back"</h2>
+                <h2 id="psychology">The Psychology of Resilience: Beyond "Bouncing Back"</h2>
                 <p>Psychologists define emotional resilience as the dynamic process of adapting well in the face of adversity, trauma, tragedy, threats, or significant sources of stress.[1] It is the capacity to mentally and emotionally cope with a crisis and return to a pre-crisis state of functioning quickly.[2] However, this concept extends beyond merely "bouncing back." The process of navigating difficult experiences can also lead to profound personal growth, empowering individuals to not only withstand adversity but to improve their lives along the way.[3]</p>
                 <p>Crucially, resilience is not a fixed personality trait possessed by a select few. Rather, it involves a set of behaviors, thoughts, and actions that anyone can learn and develop over time.[4] This perspective reframes resilience from an innate, reactive trait to a proactive, developable competency. The ability to learn resilience is why research has shown it to be "ordinary, not extraordinary".[5] For those considering or participating in the swinging lifestyle, this is a foundational concept. Success is not predetermined by an inherent "toughness" but is instead contingent on the willingness and ability to proactively learn and practice the specific resilience-building skills demanded by the lifestyle's unique challenges. In this sense, resilience can be viewed as both an essential input for and a potential output of engaging in consensual non-monogamy.[6]</p>
                 
@@ -80,7 +135,7 @@
                 </ul>
                 <p>These components are deeply intertwined with emotional intelligence—the ability to perceive, understand, and regulate emotions. Research indicates a strong positive and reciprocal relationship between emotional intelligence and resilience; individuals with higher emotional intelligence are better equipped to cope with adversity, and highly resilient people actively enhance their positive emotionality.[6]</p>
                 
-                <h2>Understanding "The Lifestyle": A Primer on Swinging Culture and Practice</h2>
+                <h2 id="primer">Understanding "The Lifestyle": A Primer on Swinging Culture and Practice</h2>
                 <p>Swinging is a form of consensual non-monogamy (CNM) where both singles and partners in a committed relationship engage in sexual activities with others as a recreational or social activity.[7] Participants often refer to this practice as "the lifestyle" or "the alternative lifestyle".[8] It is fundamentally distinct from infidelity or cheating because it is predicated on the full knowledge, consent, and often the direct involvement of all partners.[9]</p>
                 <p>A critical distinction must be made between swinging and polyamory. While both fall under the CNM umbrella, swinging is primarily focused on sexual exploration, variety, and recreation, with participants expected to maintain emotional and romantic monogamy with their primary partner.[7] Polyamory, in contrast, involves forming multiple romantic, emotional, and often long-term relationships.[10] This expectation of emotional exclusivity within a framework of sexual non-exclusivity creates a unique set of psychological dynamics that are central to this report's analysis.</p>
                 <p>The motivations for engaging in the lifestyle are varied. Many couples seek to add variety and novelty to their sex lives, explore fantasies, and increase the quality and quantity of their sexual experiences.[11] Some proponents also argue that the practice can strengthen a primary relationship by fostering deeper intimacy, trust, and radically honest communication.[9, 12] Swinging occurs in diverse contexts, from private house parties and organized events at clubs or resorts to connections made via dedicated websites and apps.[7] Engagements range from "soft swap" (involving non-penetrative acts like kissing and oral sex) to "full swap" (including penetrative intercourse).[8, 13]</p>
@@ -163,7 +218,7 @@
                     </tbody>
                 </table>
                 
-                <h2>The Crucible of Emotion: Unique Stressors in the Swinging Lifestyle</h2>
+                <h2 id="stressors">The Crucible of Emotion: Unique Stressors in the Swinging Lifestyle</h2>
                 <p>Engaging in the swinging lifestyle introduces a set of unique and potent emotional stressors that directly challenge a couple's bond and individual well-being. These adversities are not signs of failure but are predictable elements of the terrain that necessitate the development of robust emotional resilience. Successfully navigating this landscape requires a deep understanding of these specific challenges.</p>
                 
                 <h3>Deconstructing Jealousy: Fear, Insecurity, and the Specter of Loss</h3>
@@ -180,9 +235,9 @@
                 
                 <h3>Performance, Comparison, and Self-Esteem: The Individual's Internal Battle</h3>
                 <p>The swinging environment, by its nature, can become an arena for social and sexual comparison, posing a direct challenge to individual self-esteem. The community has even coined a term, "swenvy," to describe the envy that arises from seeing play partners enjoying experiences with others—a feeling distinct from jealousy's threat of loss and more akin to a fear of missing out (FOMO) or a longing for a similar experience.[35]</p>
-                <p>Watching a partner engage intimately with another person can naturally trigger direct comparisons regarding physical appearance, sexual prowess, or desirability, which can activate Negative Automatic Thoughts (NATs) and deep-seated insecurities.[36] This creates a complex dynamic where self-esteem is both a prerequisite and a potential outcome. Some research suggests that high self-esteem may be necessary to enter the lifestyle and withstand these pressures.[37] Conversely, positive experiences, validation from new partners, and successfully navigating emotional challenges can significantly enhance one's self-esteem and confidence.[38] This feedback loop means that for the emotionally resilient, the lifestyle can be a powerful engine for personal growth; for the unprepared, it can be a source of significant emotional distress.[39]</p>
+                <p>Watching a partner engage intimately with another person can naturally trigger direct comparisons regarding physical appearance, sexual prowess, or desirability, which can activate Negative Automatic Thoughts (NATs) and deep-seated insecurities.[36] This creates a complex dynamic where self-esteem is both a prerequisite and a-potential outcome. Some research suggests that high self-esteem may be necessary to enter the lifestyle and withstand these pressures.[37] Conversely, positive experiences, validation from new partners, and successfully navigating emotional challenges can significantly enhance one's self-esteem and confidence.[38] This feedback loop means that for the emotionally resilient, the lifestyle can be a powerful engine for personal growth; for the unprepared, it can be a source of significant emotional distress.[39]</p>
                 
-                <h2>The Architecture of Resilience: Core Psychological Tools</h2>
+                <h2 id="architecture">The Architecture of Resilience: Core Psychological Tools</h2>
                 <p>To successfully navigate the stressors inherent to the swinging lifestyle, participants must develop and deploy a specific set of psychological tools. These are not abstract concepts but practical skills that form the architecture of emotional resilience in this context. They revolve around radical communication, meticulous boundary negotiation, empathetic emotional processing, and a collaborative mindset.</p>
                 
                 <h3>Radical Communication: The Foundation of Emotional Safety</h3>
@@ -206,7 +261,7 @@
                 <p>The final core tool is a psychological reframe in how the couple approaches conflict. Instead of viewing challenges as interpersonal battles ("you versus me"), resilient couples adopt a collaborative, team-oriented mindset ("us versus the problem").[48] This approach fundamentally alters the dynamic of conflict resolution. Blame is replaced with curiosity, and the goal shifts from winning an argument to finding a mutually acceptable solution.[49]</p>
                 <p>This "team" mindset is built on a shared identity and an explicit agreement that the primary relationship is the top priority.[50] The lifestyle is viewed as a shared activity intended to enhance the relationship, not to threaten or replace it.[9] By framing emotional difficulties like jealousy or insecurity as external challenges that "the team" must tackle together, couples can maintain their connection and work collaboratively. This fosters the win-win compromises and cooperative spirit essential for navigating the unpredictable emotional terrain of swinging.[48]</p>
                 
-                <h2>Practical Strategies for Building and Maintaining Emotional Resilience</h2>
+                <h2 id="strategies">Practical Strategies for Building and Maintaining Emotional Resilience</h2>
                 <p>Translating psychological theory into practice is essential for navigating the swinging lifestyle. Building resilience is an active process that can be broken down into proactive, in-the-moment, and post-event strategies, as well as long-term maintenance practices.</p>
                 
                 <h3>Proactive Resilience: Pre-Play Rituals, Intention Setting, and Boundary Reinforcement</h3>
@@ -274,7 +329,7 @@
                     </tbody>
                 </table>
 
-                <h2>The Ecosystem of Support: Leveraging Community and Professional Resources</h2>
+                <h2 id="ecosystem">The Ecosystem of Support: Leveraging Community and Professional Resources</h2>
                 <p>Emotional resilience is not solely an individual or dyadic endeavor. For participants in the swinging lifestyle, resilience is significantly bolstered by a wider ecosystem of social and professional support. This network provides normalization, education, mentorship, and expert guidance, all of which are crucial for navigating the lifestyle's unique challenges.</p>
                 
                 <h3>Finding Your Tribe: The Role of Social Networks and Community in Normalizing Experiences</h3>
@@ -294,7 +349,7 @@
                 <p>While self-help and community support are invaluable, some challenges may require professional intervention. Therapy can provide a structured, supportive, and non-judgmental environment for couples to address mental health challenges, improve communication, manage jealousy, and navigate the complexities of the lifestyle.[72]</p>
                 <p>It is imperative for couples to seek out a "poly-friendly" or CNM-affirming therapist. A therapist who is not educated about consensual non-monogamy may impose their own mononormative biases, which can be unhelpful at best and actively harmful at worst.[73] A CNM-affirming therapist understands the unique dynamics of the lifestyle and can help couples build skills without judging their relationship structure. Resources for finding qualified professionals include the directories on Psychology Today (which allows filtering for "Open Relationships Non-Monogamy"),[74] polyfriendly.org, and specialized therapy practices like ReSpark Group,[70] Love Let Out,[75] Thrive Therapy Houston,[72] and the Aguirre Center for Inclusive Psychotherapy.[73]</p>
                 
-                <h2>Conclusion - Integrating Resilience into the Lifestyle</h2>
+                <h2 id="conclusion">Conclusion - Integrating Resilience into the Lifestyle</h2>
                 <p>The exploration of emotional resilience within the swinging community reveals a complex interplay of psychological stress and profound opportunities for personal and relational growth. The lifestyle, by its very nature, challenges conventional notions of intimacy, trust, and security, placing unique demands on its participants. This analysis concludes that navigating this terrain successfully is not a matter of innate emotional fortitude but rather the deliberate cultivation of a specific, learnable skill set.</p>
                 
                 <h3>Synthesis of Key Findings</h3>
@@ -305,7 +360,7 @@
                 <h3>Final Recommendations for a Sustainable and Emotionally Fulfilling Journey</h3>
                 <p>For couples considering or currently engaged in the swinging lifestyle, the following recommendations synthesize the core findings of this report into a concise guide for fostering long-term emotional resilience:</p>
                 <ul>
-                    <li><strong>Commit to the Three-Stage Communication Protocol.</strong> Treat pre-play negotiation, in-the-moment signaling, and post-play debriefing as non-negotiable rituals. This continuous dialogue is the bedrock of your emotional safety.</li>
+                    <li><strong>Commit to the Three-Stage Communication Protocol.</strong> Treat pre-play negotiation, in-the-moment signaling, and post-play debriefing as non-negotiable rituals. This continuous dialogue is the bedrock of your-emotional safety.</li>
                     <li><strong>Treat Jealousy as a Signal for Inquiry, Not a Sign of Failure.</strong> When jealousy arises, approach it with curiosity. Ask, "What is this feeling telling me about my unmet needs or underlying fears?" Use it as a catalyst for deeper conversation and self-understanding, not as a weapon of blame.</li>
                     <li><strong>Build a "Team" Identity.</strong> Consciously adopt an "us against the problem" mindset. Frame all challenges as shared objectives that you will tackle collaboratively, reinforcing the primacy and security of your primary bond.</li>
                     <li><strong>Invest in Both Individual and Couple Resilience.</strong> Recognize that a strong couple is made of two strong individuals. Encourage and support individual self-care, self-worth, and personal interests outside of the lifestyle to prevent codependency and foster a healthier partnership.</li>
@@ -314,75 +369,76 @@
                 </ul>
 
                 <!-- New References Section -->
-                <h2 class="mt-16 border-t pt-8 border-gray-200">References</h2>
+                <h2 id="references" class="mt-16 border-t pt-8 border-gray-200">References</h2>
                 <div class="references text-sm text-gray-600">
                     <ol>
-                        <li>pmc.ncbi.nlm.nih.gov - Developing resilience and harnessing emotional intelligence - PMC - PubMed Central - NIH</li>
-                        <li>apa.org - Building your resilience - American Psychological Association</li>
-                        <li>en.wikipedia.org - en.wikipedia.org</li>
-                        <li>mentalhealth.com - Emotional Resilience and Mental Health</li>
-                        <li>childrenssociety.org.uk - What Is Emotional Resilience? - The Children's Society</li>
-                        <li>positivepsychology.com - What Is Emotional Resilience? (+6 Proven Ways to Build It) - Positive Psychology</li>
-                        <li>en.wikipedia.org - Swinging (sexual practice) - Wikipedia</li>
-                        <li>masterclass.com - Explore Swinging: 7 Tips for Beginner Swingers - 2025 - MasterClass</li>
-                        <li>shinesa.org.au - Swinging FAQs - SHINE SA</li>
-                        <li>gameoflifestyle.com - What Makes Swinging Work? A Psychologist Explains CNM & Trust</li>
-                        <li>nonmonogamyhelp.com - Swinging Explained: What Is the Swinging Lifestyle?</li>
-                        <li>haenfler.sites.grinnell.edu - Swingers - Subcultures and Sociology</li>
-                        <li>2024.sci-hub.se - From Fantasy to Reality: A Grounded Theory of Experiences in the Swinging Lifestyle - Sci-Hub</li>
-                        <li>researchgate.net - (PDF) Attitudes and experiences of swinging couples - ResearchGate</li>
-                        <li>sagebrushcounseling.com - The Swinging Lifestyle and Marriage: Navigating Open Relationships Safely</li>
-                        <li>gameoflifestyle.com - The Definitive Glossary of Swinger and Sex Terminology</li>
-                        <li>swinginglifestylecoach.com - Glossary of Terms - Swinging Lifestyle Coach</li>
-                        <li>gameoflifestyle.com - Compersion: The Secret Behind Swinging Relationships</li>
-                        <li>researchgate.net - Swings and roundabouts: Management of jealousy in heterosexual ...</li>
-                        <li>pubmed.ncbi.nlm.nih.gov - Swings and roundabouts: management of jealousy in heterosexual swinging couples - PubMed</li>
-                        <li>tandfonline.com - Full article: Jealousy: A comparison of monogamous and consensually non-monogamous women's experience - Taylor & Francis Online</li>
-                        <li>beyondthepineapple.blog - “Swenvy”- Envy, Jealousy and FOMO in the Swinging Lifestyle - Beyond the Pineapple</li>
-                        <li>allrelationshipmatters.com.au - Swinging: A Sustainable Lifestyle? - All Relationship Matters</li>
-                        <li>thepincuscenter.com - What Is Compersion in Polyamory—and Why Don't I Have It? | The Pincus Center</li>
-                        <li>paigebond.com - Let's Read! Books Recommended by a Therapist — Paige Bond</li>
-                        <li>ejhs.org - The Swinging Paradigm: An Evaluation of the Marital and Sexual Satisfaction of Swingers</li>
-                        <li>reddit.com - Need advice. Red flags or just a communication breakdown? : r/Swingers - Reddit</li>
-                        <li>reddit.com - Awful communication will ruin swinging : r/Swingers - Reddit</li>
-                        <li>mindbodygreen.com - Everything You've Ever Wanted To Know About ... - MindBodyGreen</li>
-                        <li>researchgate.net - From Fantasy to Reality: A Grounded Theory of Experiences in the Swinging Lifestyle | Request PDF - ResearchGate</li>
-                        <li>houstonrelationshiptherapy.com - To Swing or Not to Swing - Houston Relationship Therapy</li>
-                        <li>meetingplacemichigan.com - The Art of Communication in Swinging: How to Express Your Desires and Boundaries - Michigan Sex Club | The Meeting Place</li>
-                        <li>everand.com - Ep 25: Jealousy, Guilt and Unexpected Emotions in the Swinger ...</li>
-                        <li>wellandgood.com - Swinging Can Add Healthy (Yep, Healthy) Excitement to Your ...</li>
-                        <li>trapezeclubs.com - How Swinging Couples Secretly Communicate - Trapeze Club</li>
-                        <li>mashable.com - How to get into swinging: A beginner's guide | Mashable</li>
-                        <li>freaksexual.com - Tips for Practical Nonmonogamy Negotiation - freaksexual</li>
-                        <li>psychcentral.com - How to Achieve Compersion in Romantic Relationships - Psych Central</li>
-                        <li>thecenterforgrowth.com - Managing Jealousy and Feeling Compersion in Non-Monogamous Relationships</li>
-                        <li>pubmed.ncbi.nlm.nih.gov - Feeling Good About Your Partners' Relationships: Compersion in Consensually Non-Monogamous Relationships - PubMed</li>
-                        <li>psychology.com - Don't Change Each Other, Change the Emotional Climate ...</li>
-                        <li>gaucherdisease.org - 5 Exercises for Building Emotional Resilience | National Gaucher Foundation</li>
-                        <li>elleciapaine.com - Conquering Jealousy in Non-monogamy - Ellecia Paine</li>
-                        <li>therapytalk.io - Strategies for Building Emotional Resilience in Couples | Blog - Talk Therapy</li>
-                        <li>couplesinstitute.com - Super Negotiating for Couples - Couples Institute</li>
-                        <li>selectpsychology.co.uk - Managing Jealousy in Ethical Non-Monogamy - Select Psychology</li>
-                        <li>holisticpsychotherapyboulder.com - A Guide to Building Resilience as a Couple - Holistic Psychotherapy Boulder- Loretta Miller</li>
-                        <li>reddit.com - What healthy coping mechanisms/strategies do y'all use when feeling jealousy? : r/polyamory - Reddit</li>
-                        <li>marriage.com - 8 Strategies on How to Deal With Emotionally Unstable Partner - Marriage.com</li>
-                        <li>castawaystravel.com - Swinging Lifestyle - Full of Positive Surprises - Castaways Travel</li>
-                        <li>opencommitment.com - BEST BOOKS ON NON-MONOGAMY — Open Commitment</li>
-                        <li>barnesandnoble.com - A Happy Life in an Open Relationship: The Essential Guide to a ...</li>
-                        <li>harvard.com - Open Deeply: A Guide to Building Conscious, Compassionate Open ...</li>
-                        <li>goodreads.com - Popular Open Relationships Books - Goodreads</li>
-                        <li>podcasts.apple.com - The Pineapple Express: A Millennial's Guide to Love, Sex Positivity ...</li>
-                        <li>thatotherlifestyle.podbean.com - That Other Lifestyle - A Lifestyle Swinger Podcast | Jayson Lee</li>
-                        <li>podcasts.apple.com - Just Keep Swinging - Podcast - Apple Podcasts</li>
-                        <li>radio.net - Vanilla Swingers - A Swinger Podcast for Newbies, by Newbies in ...</li>
-                        <li>respark.co - Therapy for Swingers | ReSpark® Group</li>
-                        <li>swinginglifestylecoach.com - ONLINE workshops - Swinging Lifestyle Coach</li>
-                        <li>do210.com - Swinging 101 with Kiley in San Antonio at Sexology Institute - Do210</li>
-                        <li>thrivetherapyhouston.com - Consenual Non-Monogamy - Thrive Therapy Houston - Counseling ...</li>
-                        <li>inclusivepsych.com - Polyamory & Consensual Non-monogamy Therapy in Atlanta ...</li>
-                        <li>asexuality.org - Couples Therapists That Specialize in Ethical non-monogamy (ENM ...</li>
-                        <li>loveletout.com - Swinger Therapy - Love Let Out PLLC</li>
-                        <li>psychology.com - Find Open Relationships Non-Monogamy Therapists and ...</li>
+                        <!-- I've wrapped each URL in an <a> tag to make it clickable -->
+                        <li><a href="https://pmc.ncbi.nlm.nih.gov" target="_blank" rel="noopener noreferrer">pmc.ncbi.nlm.nih.gov</a> - Developing resilience and harnessing emotional intelligence - PMC - PubMed Central - NIH</li>
+                        <li><a href="https://apa.org" target="_blank" rel="noopener noreferrer">apa.org</a> - Building your resilience - American Psychological Association</li>
+                        <li><a href="https://en.wikipedia.org" target="_blank" rel="noopener noreferrer">en.wikipedia.org</a> - en.wikipedia.org</li>
+                        <li><a href="https://mentalhealth.com" target="_blank" rel="noopener noreferrer">mentalhealth.com</a> - Emotional Resilience and Mental Health</li>
+                        <li><a href="https://childrenssociety.org.uk" target="_blank" rel="noopener noreferrer">childrenssociety.org.uk</a> - What Is Emotional Resilience? - The Children's Society</li>
+                        <li><a href="https://positivepsychology.com" target="_blank" rel="noopener noreferrer">positivepsychology.com</a> - What Is Emotional Resilience? (+6 Proven Ways to Build It) - Positive Psychology</li>
+                        <li><a href="https://en.wikipedia.org/wiki/Swinging_(sexual_practice)" target="_blank" rel="noopener noreferrer">en.wikipedia.org</a> - Swinging (sexual practice) - Wikipedia</li>
+                        <li><a href="https://masterclass.com" target="_blank" rel="noopener noreferrer">masterclass.com</a> - Explore Swinging: 7 Tips for Beginner Swingers - 2025 - MasterClass</li>
+                        <li><a href="https://shinesa.org.au" target="_blank" rel="noopener noreferrer">shinesa.org.au</a> - Swinging FAQs - SHINE SA</li>
+                        <li><a href="httpsV://gameoflifestyle.com" target="_blank" rel="noopener noreferrer">gameoflifestyle.com</a> - What Makes Swinging Work? A Psychologist Explains CNM & Trust</li>
+                        <li><a href="https://nonmonogamyhelp.com" target="_blank" rel="noopener noreferrer">nonmonogamyhelp.com</a> - Swinging Explained: What Is the Swinging Lifestyle?</li>
+                        <li><a href="https://haenfler.sites.grinnell.edu" target="_blank" rel="noopener noreferrer">haenfler.sites.grinnell.edu</a> - Swingers - Subcultures and Sociology</li>
+                        <li><a href="https://2024.sci-hub.se" target="_blank" rel="noopener noreferrer">2024.sci-hub.se</a> - From Fantasy to Reality: A Grounded Theory of Experiences in the Swinging Lifestyle - Sci-Hub</li>
+                        <li><a href="https://researchgate.net" target="_blank" rel="noopener noreferrer">researchgate.net</a> - (PDF) Attitudes and experiences of swinging couples - ResearchGate</li>
+                        <li><a href="https://sagebrushcounseling.com" target="_blank" rel="noopener noreferrer">sagebrushcounseling.com</a> - The Swinging Lifestyle and Marriage: Navigating Open Relationships Safely</li>
+                        <li><a href="https://gameoflifestyle.com" target="_blank" rel="noopener noreferrer">gameoflifestyle.com</a> - The Definitive Glossary of Swinger and Sex Terminology</li>
+                        <li><a href="https://swinginglifestylecoach.com" target="_blank" rel="noopener noreferrer">swinginglifestylecoach.com</a> - Glossary of Terms - Swinging Lifestyle Coach</li>
+                        <li><a href="https://gameoflifestyle.com" target="_blank" rel="noopener noreferrer">gameoflifestyle.com</a> - Compersion: The Secret Behind Swinging Relationships</li>
+                        <li><a href="https://researchgate.net" target="_blank" rel="noopener noreferrer">researchgate.net</a> - Swings and roundabouts: Management of jealousy in heterosexual ...</li>
+                        <li><a href="https://pubmed.ncbi.nlm.nih.gov" target="_blank" rel="noopener noreferrer">pubmed.ncbi.nlm.nih.gov</a> - Swings and roundabouts: management of jealousy in heterosexual swinging couples - PubMed</li>
+                        <li><a href="https://tandfonline.com" target="_blank" rel="noopener noreferrer">tandfonline.com</a> - Full article: Jealousy: A comparison of monogamous and consensually non-monogamous women's experience - Taylor & Francis Online</li>
+                        <li><a href="https://beyondthepineapple.blog" target="_blank" rel="noopener noreferrer">beyondthepineapple.blog</a> - “Swenvy”- Envy, Jealousy and FOMO in the Swinging Lifestyle - Beyond the Pineapple</li>
+                        <li><a href="https://allrelationshipmatters.com.au" target="_blank" rel="noopener noreferrer">allrelationshipmatters.com.au</a> - Swinging: A Sustainable Lifestyle? - All Relationship Matters</li>
+                        <li><a href="https://thepincuscenter.com" target="_blank" rel="noopener noreferrer">thepincuscenter.com</a> - What Is Compersion in Polyamory—and Why Don't I Have It? | The Pincus Center</li>
+                        <li><a href="https://paigebond.com" target="_blank" rel="noopener noreferrer">paigebond.com</a> - Let's Read! Books Recommended by a Therapist — Paige Bond</li>
+                        <li><a href="https://ejhs.org" target="_blank" rel="noopener noreferrer">ejhs.org</a> - The Swinging Paradigm: An Evaluation of the Marital and Sexual Satisfaction of Swingers</li>
+                        <li><a href="https://reddit.com" target="_blank" rel="noopener noreferrer">reddit.com</a> - Need advice. Red flags or just a communication breakdown? : r/Swingers - Reddit</li>
+                        <li><a href="https://reddit.com" target="_blank" rel="noopener noreferrer">reddit.com</a> - Awful communication will ruin swinging : r/Swingers - Reddit</li>
+                        <li><a href="https://mindbodygreen.com" target="_blank" rel="noopener noreferrer">mindbodygreen.com</a> - Everything You've Ever Wanted To Know About ... - MindBodyGreen</li>
+                        <li><a href="https://researchgate.net" target="_blank" rel="noopener noreferrer">researchgate.net</a> - From Fantasy to Reality: A Grounded Theory of Experiences in the Swinging Lifestyle | Request PDF - ResearchGate</li>
+                        <li><a href="https://houstonrelationshiptherapy.com" target="_blank" rel="noopener noreferrer">houstonrelationshiptherapy.com</a> - To Swing or Not to Swing - Houston Relationship Therapy</li>
+                        <li><a href="https://meetingplacemichigan.com" target="_blank" rel="noopener noreferrer">meetingplacemichigan.com</a> - The Art of Communication in Swinging: How to Express Your Desires and Boundaries - Michigan Sex Club | The Meeting Place</li>
+                        <li><a href="https://everand.com" target="_blank" rel="noopener noreferrer">everand.com</a> - Ep 25: Jealousy, Guilt and Unexpected Emotions in the Swinger ...</li>
+                        <li><a href="https://wellandgood.com" target="_blank" rel="noopener noreferrer">wellandgood.com</a> - Swinging Can Add Healthy (Yep, Healthy) Excitement to Your ...</li>
+                        <li><a href="https://trapezeclubs.com" target="_blank" rel="noopener noreferrer">trapezeclubs.com</a> - How Swinging Couples Secretly Communicate - Trapeze Club</li>
+                        <li><a href="https://mashable.com" target="_blank" rel="noopener noreferrer">mashable.com</a> - How to get into swinging: A beginner's guide | Mashable</li>
+                        <li><a href="https://freaksexual.com" target="_blank" rel="noopener noreferrer">freaksexual.com</a> - Tips for Practical Nonmonogamy Negotiation - freaksexual</li>
+                        <li><a href="https://psychcentral.com" target="_blank" rel="noopener noreferrer">psychcentral.com</a> - How to Achieve Compersion in Romantic Relationships - Psych Central</li>
+                        <li><a href="https://thecenterforgrowth.com" target="_blank" rel="noopener noreferrer">thecenterforgrowth.com</a> - Managing Jealousy and Feeling Compersion in Non-Monogamous Relationships</li>
+                        <li><a href="https://pubmed.ncbi.nlm.nih.gov" target="_blank" rel="noopener noreferrer">pubmed.ncbi.nlm.nih.gov</a> - Feeling Good About Your Partners' Relationships: Compersion in Consensually Non-Monogamous Relationships - PubMed</li>
+                        <li><a href="https://psychologytoday.com" target="_blank" rel="noopener noreferrer">psychologytoday.com</a> - Don't Change Each Other, Change the Emotional Climate ...</li>
+                        <li><a href="https://gaucherdisease.org" target="_blank" rel="noopener noreferrer">gaucherdisease.org</a> - 5 Exercises for Building Emotional Resilience | National Gaucher Foundation</li>
+                        <li><a href="https://elleciapaine.com" target="_blank" rel="noopener noreferrer">elleciapaine.com</a> - Conquering Jealousy in Non-monogamy - Ellecia Paine</li>
+                        <li><a href="https://therapytalk.io" target="_blank" rel="noopener noreferrer">therapytalk.io</a> - Strategies for Building Emotional Resilience in Couples | Blog - Talk Therapy</li>
+                        <li><a href="https://couplesinstitute.com" target="_blank" rel="noopener noreferrer">couplesinstitute.com</a> - Super Negotiating for Couples - Couples Institute</li>
+                        <li><a href="https://selectpsychology.co.uk" target="_blank" rel="noopener noreferrer">selectpsychology.co.uk</a> - Managing Jealousy in Ethical Non-Monogamy - Select Psychology</li>
+                        <li><a href="https://holisticpsychotherapyboulder.com" target="_blank" rel="noopener noreferrer">holisticpsychotherapyboulder.com</a> - A Guide to Building Resilience as a Couple - Holistic Psychotherapy Boulder- Loretta Miller</li>
+                        <li><a href="https://reddit.com" target="_blank" rel="noopener noreferrer">reddit.com</a> - What healthy coping mechanisms/strategies do y'all use when feeling jealousy? : r/polyamory - Reddit</li>
+                        <li><a href="https://marriage.com" target="_blank" rel="noopener noreferrer">marriage.com</a> - 8 Strategies on How to Deal With Emotionally Unstable Partner - Marriage.com</li>
+                        <li><a href="https://castawaystravel.com" target="_blank" rel="noopener noreferrer">castawaystravel.com</a> - Swinging Lifestyle - Full of Positive Surprises - Castaways Travel</li>
+                        <li><a href="httpss://opencommitment.com" target="_blank" rel="noopener noreferrer">opencommitment.com</a> - BEST BOOKS ON NON-MONOGAMY — Open Commitment</li>
+                        <li><a href="https://barnesandnoble.com" target="_blank" rel="noopener noreferrer">barnesandnoble.com</a> - A Happy Life in an Open Relationship: The Essential Guide to a ...</li>
+                        <li><a href="https://harvard.com" target="_blank" rel="noopener noreferrer">harvard.com</a> - Open Deeply: A Guide to Building Conscious, Compassionate Open ...</li>
+                        <li><a href="https://goodreads.com" target="_blank" rel="noopener noreferrer">goodreads.com</a> - Popular Open Relationships Books - Goodreads</li>
+                        <li><a href="https://podcasts.apple.com" target="_blank" rel="noopener noreferrer">podcasts.apple.com</a> - The Pineapple Express: A Millennial's Guide to Love, Sex Positivity ...</li>
+                        <li><a href="httpss://thatotherlifestyle.podbean.com" target="_blank" rel="noopener noreferrer">thatotherlifestyle.podbean.com</a> - That Other Lifestyle - A Lifestyle Swinger Podcast | Jayson Lee</li>
+                        <li><a href="https://podcasts.apple.com" target="_blank" rel="noopener noreferrer">podcasts.apple.com</a> - Just Keep Swinging - Podcast - Apple Podcasts</li>
+                        <li><a href="https://radio.net" target="_blank" rel="noopener noreferrer">radio.net</a> - Vanilla Swingers - A Swinger Podcast for Newbies, by Newbies in ...</li>
+                        <li><a href="https:"//respark.co" target="_blank" rel="noopener noreferrer">respark.co</a> - Therapy for Swingers | ReSpark® Group</li>
+                        <li><a href="https://swinginglifestylecoach.com" target="_blank" rel="noopener noreferrer">swinginglifestylecoach.com</a> - ONLINE workshops - Swinging Lifestyle Coach</li>
+                        <li><a href="https://do210.com" target="_blank" rel="noopener noreferrer">do210.com</a> - Swinging 101 with Kiley in San Antonio at Sexology Institute - Do210</li>
+                        <li><a href="httpsD://thrivetherapyhouston.com" target="_blank" rel="noopener noreferrer">thrivetherapyhouston.com</a> - Consenual Non-Monogamy - Thrive Therapy Houston - Counseling ...</li>
+                        <li><a href="httpss://inclusivepsych.com" target="_blank" rel="noopener noreferrer">inclusivepsych.com</a> - Polyamory & Consensual Non-monogamy Therapy in Atlanta ...</li>
+                        <li><a href="https://asexuality.org" target="_blank" rel="noopener noreferrer">asexuality.org</a> - Couples Therapists That Specialize in Ethical non-monogamy (ENM ...</li>
+                        <li><a href="https://loveletout.com" target="_blank" rel="noopener noreferrer">loveletout.com</a> - Swinger Therapy - Love Let Out PLLC</li>
+                        <li><a href="https://psychologytoday.com" target="_blank" rel="noopener noreferrer">psychologytoday.com</a> - Find Open Relationships Non-Monogamy Therapists and ...</li>
                     </ol>
                 </div>
 
@@ -392,7 +448,9 @@
     </div>
 
     <footer class="text-center mt-20 text-gray-400 text-sm">
-        Powered by Plain HTML
+        Copyright 2025 The ENM Blog     
+        
+        enmblog2025@gmail.com
     </footer>
 
     <!-- No JavaScript is needed for this version! -->
